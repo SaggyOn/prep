@@ -1,58 +1,116 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <VueSlickCarousel :arrows="true" :dots="true">
+              <div><img src="../../images/category-1.jpg" alt="" /></div>
+              <div><img src="../../images/category-2.jpg" alt="" /></div>
+              <div><img src="../../images/category-3.jpg" alt="" /></div>
+            </VueSlickCarousel>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>10 DAYS ONLY</p>
+          <h3>Special Offer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+            quaerat, distinctio quidem eos sapiente aperiam odit. Maiores quia
+            dolorum, laboriosam ea pariatur omnis illum iure! Perferendis ad in
+            sapiente ex?
+          </p>
+          <hr />
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Example label</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Example input"
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Another label</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Another input"
+              />
+            </div>
+          </form>
+          
+          <form>
+            <div class="form-group"></div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input position-static"
+                type="checkbox"
+                id="blankCheckbox"
+                value="option1"
+              />
+              Other Hot Deals
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input position-static"
+                type="radio"
+                name="blankRadio"
+                id="blankRadio1"
+                value="option1"
+              />
+              Other Hot Deals
+            </div>
+          </form>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
-
 <script>
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
+  name: "MyComponent",
+  components: { VueSlickCarousel },
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+:root {
+  --light: #c7c7c7;
+  --primary: rgba(49, 72, 245, 1);
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+body {
+  background: #f5f5f8 !important;
+  font-family: "Inter-Medium" !important;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0 !important;
 }
 </style>
