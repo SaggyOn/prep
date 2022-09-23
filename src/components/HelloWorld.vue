@@ -23,7 +23,7 @@
                 quia dolorum, laboriosam ea pariatur omnis illum iure!
                 Perferendis ad in sapiente ex?
               </p>
-              <div class="color-light">
+              <div class="color-light mt-3">
                 <div class="d-flex">
                   <div>
                     <i class="ri-user-3-line"></i>
@@ -33,7 +33,7 @@
                     Nemo quaerat, distinctio quidem eos sapiente aperiam odit.
                   </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex mt-2">
                   <div>
                     <i class="ri-user-3-line"></i>
                   </div>
@@ -67,7 +67,7 @@
                   <option value="3">Three</option>
                 </select>
               </form>
-              <div class="form-check">
+              <div class="form-check mt-2">
                 <input
                   class="form-check-input position-static"
                   type="checkbox"
@@ -76,7 +76,7 @@
                 />
                 <p class="color-blue">Other Hot Deals</p>
               </div>
-              <div class="form-check">
+              <div class="form-check mt-2">
                 <input
                   class="form-check-input position-static"
                   type="radio"
@@ -146,12 +146,14 @@ i {
 .buttons{
   gap: 1rem !important;
   display: flex;
+  margin-top: 1rem;
 }
 .btn{
   width: 25rem;
 }
 .form-group-input {
-  width: 10rem;
+  width: 20rem;
+  margin-top: 15px;
 }
 .slick-dots {
   bottom: 25px !important;
